@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  gap: 5px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+  justify-content: space-around;
+}
+
+.month {
+  font-size: 12px;
+}
+
+.weeks {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  font-size: 12px;
+}
+.contribution-graph {
+  display: grid;
+  grid-template-columns: repeat(51, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.contribution-cell {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+.contribution-cell:hover {
+  border: 1px solid #00000080;
+  transition: all;
+}
+
+.today {
+  border: 2px solid #4285f4;
+}
+
+.no-contributions {
+  background-color: #ededed;
+}
+
+.low-contributions {
+  background-color: #acd5f2;
+}
+
+.medium-contributions {
+  background-color: #7fa8c9;
+}
+
+.high-contributions {
+  background-color: #527ba0;
+}
+
+.very-high-contributions {
+  background-color: #254e77;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  z-index: 2;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 10px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  transition: all;
+}
+
+.tooltip-date {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.end {
+  margin: 10px 0 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #959494;
+  font-size: 12px;
+}
+
+.end span {
+  width: 15px;
+  height: 15px;
+}
