@@ -8,4 +8,4 @@
 
 ### Screen:
 
-![alt text](/screen.png)
+![alt text](img/screen.png)
